@@ -12,3 +12,10 @@
 ### For the second course, we will build a distributed database system where we will store data collected from different farmers and data from different datasets
 
 #### Our database will be built in postgresql
+
+## Thats why we have 3 different branches
+### AI_model for the tensorflow prediction model
+### web_app for the react JS UI
+### db_admin for the database
+
+#### So when working on a particular part of a project, make sure to always be on that branch
