@@ -34,23 +34,26 @@ const Signup = () => {
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
-        <TextField label="Username" value={username} onChange={handleChange} />
-        <TextField label="Email" value={email} onChange={handleChange} />
-        <TextField
-          label="Password"
-          type="password"
-          value={password}
-          onChange={handleChange}
-        />
-        <TextField
-          label="Confirm Password"
-          type="password"
-          value={confirmPassword}
-          onChange={handleChange}
-        />
-        <Button variant="contained" color="primary" type="submit">
-          Sign Up
-        </Button>
+        <Form>
+          <TextField label="Username" value={username} onChange={handleChange} />
+          <TextField label="Email" value={email} onChange={handleChange} />
+          <TextField
+            label="Password"
+            type="password"
+            value={password}
+            onChange={handleChange}
+          />
+          <TextField
+            label="Confirm Password"
+            type="password"
+            value={confirmPassword}
+            onChange={handleChange}
+          />
+          <Button variant="contained" color="primary" type="submit">
+            Sign Up
+          </Button>
+
+        </Form>
       </Formik>
     </Container>
   );

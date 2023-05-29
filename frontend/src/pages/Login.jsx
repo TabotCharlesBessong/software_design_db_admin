@@ -8,7 +8,7 @@ const Login = () => {
   const [password, setPassword] = useState("");
 
   const validationSchema = yup.object({
-    username: yup.string().required(),
+    email: yup.string().required(),
     password: yup.string().required().min(8),
   });
 
@@ -25,20 +25,23 @@ const Login = () => {
   return (
     <Container>
       <Formik
-        initialValues={{ username, password }}
+        initialValues={{ email, password }}
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
-        <TextField label="Username" value={username} onChange={handleChange} />
-        <TextField
-          label="Password"
-          type="password"
-          value={password}
-          onChange={handleChange}
-        />
-        <Button variant="contained" color="primary" type="submit">
-          Login
-        </Button>
+        <Form>
+          <TextField label="Username" value={email} onChange={handleChange} />
+          <TextField
+            label="Password"
+            type="password"
+            value={password}
+            onChange={handleChange}
+          />
+          <Button variant="contained" color="primary" type="submit">
+            Login
+          </Button>
+
+        </Form>
       </Formik>
     </Container>
   );
