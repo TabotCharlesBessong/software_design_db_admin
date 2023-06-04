@@ -35,24 +35,52 @@ const Signup = () => {
         onSubmit={handleSubmit}
       >
         <Form>
-          <TextField label="Username" value={username} onChange={handleChange} />
-          <TextField label="Email" value={email} onChange={handleChange} />
+          <TextField
+            label="Username"
+            type="password"
+            value={username}
+            onChange={handleChange}
+            fullWidth
+            sx={{
+              margin: "2rem auto",
+              alignSelf: "center",
+            }}
+          />
+          <TextField
+            label="Email Address"
+            value={email}
+            onChange={handleChange}
+            fullWidth
+            sx={{
+              margin: "2rem auto",
+              alignSelf: "center",
+            }}
+          />
           <TextField
             label="Password"
             type="password"
             value={password}
             onChange={handleChange}
+            fullWidth
+            sx={{
+              margin: "2rem auto",
+              alignSelf: "center",
+            }}
           />
           <TextField
             label="Confirm Password"
             type="password"
             value={confirmPassword}
             onChange={handleChange}
+            fullWidth
+            sx={{
+              margin: "2rem auto",
+              alignSelf: "center",
+            }}
           />
           <Button variant="contained" color="primary" type="submit">
             Sign Up
           </Button>
-
         </Form>
       </Formik>
     </Container>

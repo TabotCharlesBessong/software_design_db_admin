@@ -23,24 +23,60 @@ const Login = () => {
   };
 
   return (
-    <Container>
+    <Container
+      sx={{
+        marginTop: "4rem",
+      }}
+    >
       <Formik
         initialValues={{ email, password }}
         validationSchema={validationSchema}
         onSubmit={handleSubmit}
       >
-        <Form>
-          <TextField label="Username" value={email} onChange={handleChange} />
+        <Form
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "space-around",
+            height: "90%",
+            width: 450,
+            padding: "auto",
+          }}
+        >
+          <TextField
+            label="Email Address"
+            value={email}
+            onChange={handleChange}
+            fullWidth
+            sx={{
+              margin: "2rem auto",
+              alignSelf: "center",
+            }}
+          />
           <TextField
             label="Password"
             type="password"
             value={password}
             onChange={handleChange}
+            fullWidth
+            sx={{
+              margin: "2rem auto",
+              alignSelf: "center",
+            }}
           />
-          <Button variant="contained" color="primary" type="submit">
+          <Button
+            variant="contained"
+            color="primary"
+            type="submit"
+            sx={{
+              padding: "0.5rem 5rem",
+              margin: "2rem auto",
+              alignSelf: "center",
+            }}
+          >
             Login
           </Button>
-
         </Form>
       </Formik>
     </Container>
