@@ -6,7 +6,7 @@ import {BrowserRouter as Router, Routes,Route} from 'react-router-dom'
 
 const App = () => {
   return (
-    <Box style={{position:'relative',top:'-14.5rem'}} >
+    <Box  >
       <Router>
         <Header/>
         <Routes>
