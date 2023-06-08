@@ -3,7 +3,7 @@ Implemented Machine Learning and Artificial Intelligence model to detect the dif
 
 
 # High Level Diagram:- 
-![Plant Disease HLD](https://user-images.githubusercontent.com/34335127/191258796-53691617-6168-4781-bf47-c58ef45f1e0c.png)
+
 
 # Technology Stack
 - Python
