@@ -1,366 +1,12 @@
 
-// import { Box, Card, Grid, Typography } from "@mui/material";
-// import React from "react";
-// import leaf from '../assets/leaf.jpg'
-
-// const Crops = () => {
-//   return (
-//     <Grid
-//       container
-//       direction="row"
-//       alignItems="center"
-//       justifyContent="center"
-//       spacing={2}
-//       sx={{
-//         // backgroundColor:'green'
-//       }}
-//     >
-//       <Grid
-//         item
-//         xs={10}
-//         sm={6}
-//         md={4}
-//         lg={3}
-//         container
-//         direction="column"
-//         sx={{
-//           // backgroundColor:'#aaa',
-//           borderRadius: "1.5rem",
-//         }}
-//         component={Card}
-//         elevation={5}
-//       >
-//         <Grid
-//           item
-//           sx={{
-//             width: "100%",
-//             height: "55%",
-//             border: "0 0.5rem 0.5rem 0",
-//           }}
-//         >
-//           <img width="100%" src={leaf} alt="" />
-//         </Grid>
-//         <Grid
-//           item
-//           sx={{
-//             backgroundColor: "#fa1ab7",
-//             width: "100%",
-//             height: "45%",
-//             marginTop: "1rem",
-//           }}
-//         >
-//           <Box
-//             sx={{
-//               display: "flex",
-//               alignItems: "center",
-//               justifyContent: "space-between",
-//             }}
-//           >
-//             <Typography>Name</Typography>
-//             <Typography>Potato</Typography>
-//           </Box>
-//           <Box
-//             sx={{
-//               display: "flex",
-//               alignItems: "center",
-//               justifyContent: "space-between",
-//             }}
-//           >
-//             <Typography>Location</Typography>
-//             <Typography>Buea</Typography>
-//           </Box>
-//           <Box
-//             sx={{
-//               display: "flex",
-//               alignItems: "center",
-//               justifyContent: "space-between",
-//             }}
-//           >
-//             <Typography>Planting Date</Typography>
-//             <Typography>21/09/2009</Typography>
-//           </Box>
-//         </Grid>
-//       </Grid>
-
-//       <Grid
-//         item
-//         xs={12}
-//         sm={6}
-//         md={4}
-//         lg={3}
-//         container
-//         direction="column"
-//         sx={{
-//           // backgroundColor:'#aaa',
-//           borderRadius: "1.5rem",
-//         }}
-//         component={Card}
-//         elevation={5}
-//       >
-//         <Grid
-//           item
-//           sx={{
-//             width: "100%",
-//             height: "55%",
-//             border: "0 0.5rem 0.5rem 0",
-//           }}
-//         >
-//           <img width="100%" src={leaf} alt="" />
-//         </Grid>
-//         <Grid
-//           item
-//           sx={{
-//             backgroundColor: "#fa1ab7",
-//             width: "100%",
-//             height: "45%",
-//             marginTop: "1rem",
-//           }}
-//         >
-//           <Box
-//             sx={{
-//               display: "flex",
-//               alignItems: "center",
-//               justifyContent: "space-between",
-//             }}
-//           >
-//             <Typography>Name</Typography>
-//             <Typography>Potato</Typography>
-//           </Box>
-//           <Box
-//             sx={{
-//               display: "flex",
-//               alignItems: "center",
-//               justifyContent: "space-between",
-//             }}
-//           >
-//             <Typography>Location</Typography>
-//             <Typography>Buea</Typography>
-//           </Box>
-//           <Box
-//             sx={{
-//               display: "flex",
-//               alignItems: "center",
-//               justifyContent: "space-between",
-//             }}
-//           >
-//             <Typography>Planting Date</Typography>
-//             <Typography>21/09/2009</Typography>
-//           </Box>
-//         </Grid>
-//       </Grid>
-
-//       <Grid
-//         item
-//         xs={12}
-//         sm={6}
-//         md={4}
-//         lg={3}
-//         container
-//         direction="column"
-//         sx={{
-//           // backgroundColor:'#aaa',
-//           borderRadius: "1.5rem",
-//         }}
-//         component={Card}
-//         elevation={5}
-//       >
-//         <Grid
-//           item
-//           sx={{
-//             width: "100%",
-//             height: "55%",
-//             border: "0 0.5rem 0.5rem 0",
-//           }}
-//         >
-//           <img width="100%" src={leaf} alt="" />
-//         </Grid>
-//         <Grid
-//           item
-//           sx={{
-//             backgroundColor: "#fa1ab7",
-//             width: "100%",
-//             height: "45%",
-//             marginTop: "1rem",
-//           }}
-//         >
-//           <Box
-//             sx={{
-//               display: "flex",
-//               alignItems: "center",
-//               justifyContent: "space-between",
-//             }}
-//           >
-//             <Typography>Name</Typography>
-//             <Typography>Potato</Typography>
-//           </Box>
-//           <Box
-//             sx={{
-//               display: "flex",
-//               alignItems: "center",
-//               justifyContent: "space-between",
-//             }}
-//           >
-//             <Typography>Location</Typography>
-//             <Typography>Buea</Typography>
-//           </Box>
-//           <Box
-//             sx={{
-//               display: "flex",
-//               alignItems: "center",
-//               justifyContent: "space-between",
-//             }}
-//           >
-//             <Typography>Planting Date</Typography>
-//             <Typography>21/09/2009</Typography>
-//           </Box>
-//         </Grid>
-//       </Grid>
-
-//       <Grid
-//         item
-//         xs={12}
-//         sm={6}
-//         md={4}
-//         lg={3}
-//         container
-//         direction="column"
-//         sx={{
-//           // backgroundColor:'#aaa',
-//           borderRadius: "1.5rem",
-//         }}
-//         component={Card}
-//         elevation={5}
-//       >
-//         <Grid
-//           item
-//           sx={{
-//             width: "100%",
-//             height: "55%",
-//             border: "0 0.5rem 0.5rem 0",
-//           }}
-//         >
-//           <img width="100%" src={leaf} alt="" />
-//         </Grid>
-//         <Grid
-//           item
-//           sx={{
-//             backgroundColor: "#fa1ab7",
-//             width: "100%",
-//             height: "45%",
-//             marginTop: "1rem",
-//           }}
-//         >
-//           <Box
-//             sx={{
-//               display: "flex",
-//               alignItems: "center",
-//               justifyContent: "space-between",
-//             }}
-//           >
-//             <Typography>Name</Typography>
-//             <Typography>Potato</Typography>
-//           </Box>
-//           <Box
-//             sx={{
-//               display: "flex",
-//               alignItems: "center",
-//               justifyContent: "space-between",
-//             }}
-//           >
-//             <Typography>Location</Typography>
-//             <Typography>Buea</Typography>
-//           </Box>
-//           <Box
-//             sx={{
-//               display: "flex",
-//               alignItems: "center",
-//               justifyContent: "space-between",
-//             }}
-//           >
-//             <Typography>Planting Date</Typography>
-//             <Typography>21/09/2009</Typography>
-//           </Box>
-//         </Grid>
-//       </Grid>
-
-//       <Grid
-//         item
-//         xs={12}
-//         sm={6}
-//         md={4}
-//         lg={3}
-//         container
-//         direction="column"
-//         sx={{
-//           backgroundColor:'transparent',
-//           borderRadius: "1.5rem",
-//           // margin:'1.5rem'
-//         }}
-//         component={Card}
-//         elevation={5}
-//       >
-//         <Grid
-//           item
-//           sx={{
-//             width: "100%",
-//             height: "55%",
-//             border: "0 0.5rem 0.5rem 0",
-//           }}
-//         >
-//           <img width="100%" src={leaf} alt="" />
-//         </Grid>
-//         <Grid
-//           item
-//           sx={{
-//             backgroundColor: "#fa1ab7",
-//             width: "100%",
-//             height: "45%",
-//             marginTop: "1rem",
-//           }}
-//         >
-//           <Box
-//             sx={{
-//               display: "flex",
-//               alignItems: "center",
-//               justifyContent: "space-between",
-//             }}
-//           >
-//             <Typography>Name</Typography>
-//             <Typography>Potato</Typography>
-//           </Box>
-//           <Box
-//             sx={{
-//               display: "flex",
-//               alignItems: "center",
-//               justifyContent: "space-between",
-//             }}
-//           >
-//             <Typography>Location</Typography>
-//             <Typography>Buea</Typography>
-//           </Box>
-//           <Box
-//             sx={{
-//               display: "flex",
-//               alignItems: "center",
-//               justifyContent: "space-between",
-//             }}
-//           >
-//             <Typography>Planting Date</Typography>
-//             <Typography>21/09/2009</Typography>
-//           </Box>
-//         </Grid>
-//       </Grid>
-//     </Grid>
-//   );
-// };
-
-// export default Crops;
 
 import { Box, Card, Grid, Typography } from "@mui/material";
 import React from "react";
 import leaf from "../assets/leaf.jpg";
+import data from '../constants/data'
 
 const Crops = () => {
+  const plants  = data.plants
   return (
     <Grid
       container
@@ -369,8 +15,8 @@ const Crops = () => {
         marginTop: "1rem",
       }}
     >
-      {[...Array(13)].map((_, index) => (
-        <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+      {plants.map((plant) => (
+        <Grid item xs={12} sm={6} md={4} lg={3} key={plant.id}>
           <Card
             sx={{
               borderRadius: "1.5rem",
@@ -391,7 +37,7 @@ const Crops = () => {
                 position: "relative",
               }}
             >
-              <img width="100%" src={leaf} alt="" />
+              <img width="100%" src={plant.image} alt="name" />
               <Box
                 sx={{
                   position: "absolute",
@@ -401,6 +47,9 @@ const Crops = () => {
                   borderRadius: "50%",
                   bgcolor: "#ffffff",
                   boxShadow: "0px 4px 20px 0px rgba(0, 0, 0, 0.2)",
+                  display:'flex',
+                  alignItems:'center',
+                  justifyContent:'space-between'
                 }}
               >
                 <Typography
@@ -410,7 +59,16 @@ const Crops = () => {
                     color: "#1B5E20",
                   }}
                 >
-                  Potato
+                  Plant Name:
+                </Typography>
+                <Typography
+                  variant="subtitle2"
+                  sx={{
+                    fontWeight: "bold",
+                    color: "#1B5E20",
+                  }}
+                >
+                  {plant.name}
                 </Typography>
               </Box>
             </Box>
@@ -438,7 +96,7 @@ const Crops = () => {
                   color: "#424242",
                 }}
               >
-                Buea
+                {plant.location}
               </Typography>
             </Box>
             <Box
@@ -466,7 +124,7 @@ const Crops = () => {
                   color: "#424242",
                 }}
               >
-                21/09/2009
+                {plant.planting_date}
               </Typography>
             </Box>
           </Card>
