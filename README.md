@@ -24,9 +24,9 @@
 
 ## To run our application 
 ### running the frontend
-` cd to frontend `
+`cd to frontend`
+`pnpm run dev`
 
 ### running our prediction app
-` cd working_prediction_engine'
-
+`cd working_prediction_engine'
 `flask run`
