@@ -1,0 +1,30 @@
+CREATE TABLE users (
+  name VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  location VARCHAR(255) NOT NULL,
+  user_id SERIAL NOT NULL PRIMARY KEY
+);
+
+CREATE TABLE diseases (
+  name VARCHAR(255) NOT NULL,
+  symptoms VARCHAR(255) NOT NULL,
+  causes VARCHAR(255) NOT NULL,
+  treatments VARCHAR(255) NOT NULL,
+  disease_id SERIAL NOT NULL PRIMARY KEY
+);
+
+CREATE TABLE treatments (
+  type VARCHAR(255) NOT NULL,
+  dosage INT NOT NULL,
+  frequency INT NOT NULL,
+  treatment_id SERIAL NOT NULL PRIMARY KEY
+);
+
+CREATE TABLE crops (
+  type VARCHAR(255) NOT NULL,
+  variety VARCHAR(255) NOT NULL,
+  planting_date DATE NOT NULL,
+  location VARCHAR(255) NOT NULL,
+  soil_type VARCHAR(255) NOT NULL,
+  crop_id SERIAL NOT NULL PRIMARY KEY
+);
