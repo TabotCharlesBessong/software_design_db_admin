@@ -19,3 +19,14 @@
 ### db_admin for the database
 
 #### So when working on a particular part of a project, make sure to always be on that branch
+
+## After mergin of our branch, we linked the different branches to have an application that functions completely for the purpose
+
+## To run our application 
+### running the frontend
+` cd to frontend `
+
+### running our prediction app
+` cd working_prediction_engine'
+
+`flask run`
