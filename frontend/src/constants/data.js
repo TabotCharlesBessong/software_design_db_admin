@@ -95,6 +95,58 @@ const plants = [
     
 ]
 
-const data = {plants}
+const diseases = [
+  {
+    id: 1,
+    name: "Fusarium wilt",
+    plants: ["Tomatoes", "Cucumbers", "Watermelons"],
+    treatment: "Crop rotation and soil fumigation",
+    image: "/images/fusarium-wilt.jpg",
+  },
+  {
+    id: 2,
+    name: "Powdery mildew",
+    plants: ["Grapes", "Squash", "Pumpkins"],
+    treatment: "Fungicides and pruning",
+    image: "/images/powdery-mildew.jpg",
+  },
+  {
+    id: 3,
+    name: "Apple scab",
+    plants: ["Apples", "Pears", "Crabapples"],
+    treatment: "Fungicides and removing infected leaves",
+    image: "/images/apple-scab.jpg",
+  },
+  {
+    id: 4,
+    name: "Late blight",
+    plants: ["Potatoes", "Tomatoes"],
+    treatment: "Fungicides and removing infected plants",
+    image: "/images/late-blight.jpg",
+  },
+  {
+    id: 5,
+    name: "Black spot",
+    plants: ["Roses"],
+    treatment: "Fungicides and removing infected leaves",
+    image: "/images/black-spot.jpg",
+  },
+  {
+    id: 6,
+    name: "Downy mildew",
+    plants: ["Grapes", "Cucumbers", "Lettuce"],
+    treatment: "Fungicides and proper plant spacing",
+    image: "/images/downy-mildew.jpg",
+  },
+  {
+    id: 7,
+    name: "Anthracnose",
+    plants: ["Beans", "Peppers", "Tomatoes"],
+    treatment: "Fungicides and proper plant spacing",
+    image: "/images/anthracnose.jpg",
+  },
+];
+
+const data = {plants,diseases}
 
 export default data

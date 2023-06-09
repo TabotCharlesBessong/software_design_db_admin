@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import React from "react";
-import { Crops, Dashboard, HomePage, Login, Prediction, Signup } from "./pages";
+import { Crops, Dashboard, Diseases, HomePage, Login, Prediction, Signup } from "./pages";
 import {Header} from './component'
 import {BrowserRouter as Router, Routes,Route} from 'react-router-dom'
 
@@ -16,6 +16,7 @@ const App = () => {
           <Route path='/ dashboard' element={<Dashboard/>} />
           <Route path='/predict' element={<Prediction/>} />
           <Route path='/crops' element={<Crops/>} />
+          <Route path='/diseases' element={<Diseases/>} />
         </Routes>
       </Router>
     </Box>
