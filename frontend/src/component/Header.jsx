@@ -5,7 +5,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 import { Link } from "react-router-dom";
 
 const pages = ["Crops", "Diseases", "Treatment","Dashboard"];
-const pages1 = [{name:"Crops",link:'/crops'}, {name:"Diseases",link:'/diseases'}, {name:"Treatment",link:'/treatments'},{name:"Dashboard",link:'/dashboard'}];
+const pages1 = [{name:"Crops",link:'/crops'}, {name:"Diseases",link:'/diseases'}, {name:"Treatment",link:'/treatments'},{name:"Prediction",link:'http://localhost:5000'}];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
