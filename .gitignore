@@ -1,6 +1,9 @@
 # Object file
 *.o
 /Data
+# <<<<<<< mobile_app
+
+# >>>>>>> main
 
 # Ada Library Information
 *.ali
