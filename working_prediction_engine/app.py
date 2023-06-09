@@ -20,7 +20,7 @@ app = Flask(__name__)
 # Check https://keras.io/applications/
 
 model =tf.keras.models.load_model('PlantDNet.h5',compile=False)
-print('Model loaded. Check http://127.0.0.1:5001/')
+print('Model loaded. Check http://127.0.0.1:5000/')
 
 
 def model_predict(img_path, model):
