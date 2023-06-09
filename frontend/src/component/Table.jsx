@@ -1,14 +1,17 @@
 import React, { useState } from 'react'
-import { Table, TableHead, TableRow, TableCell, TablePagination, TableSortLabel } from '@mui/material'
+import { Table, TableHead, TableRow, TableCell, TablePagination, TableSortLabel,useTheme } from '@mui/material'
 import { makeStyles } from '@mui/styles';
+
+
+// const theme = useTheme()
 
 const useStyles = makeStyles(theme => ({
     table: {
-        marginTop: theme.spacing(3),
+        marginTop: '2rem',
         '& thead th': {
             fontWeight: '600',
-            color: theme.palette.primary.main,
-            backgroundColor: theme.palette.primary.light,
+            color: 'blue',
+            backgroundColor: 'cyan',
         },
         '& tbody td': {
             fontWeight: '300',
@@ -19,7 +22,6 @@ const useStyles = makeStyles(theme => ({
         },
     },
 }))
-
 export default function useTable(records, headCells,filterFn) {
 
     const classes = useStyles();
