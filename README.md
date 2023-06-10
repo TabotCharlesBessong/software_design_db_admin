@@ -24,9 +24,16 @@
 
 ## To run our application 
 ### running the frontend
+
 `cd to frontend`
 --------------
+#### If you have node installed on your computer 
+`npm i -g pnpm`
+`npn i -g vite`
+-----------------------------------------
 `pnpm run dev`
+-----------------------------
+
 
 ### running our prediction app
 `cd working_prediction_engine`
